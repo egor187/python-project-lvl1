@@ -33,8 +33,9 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
+          pip install poetry
+          pip install flake8
           make install
       - name: Lint with flake8
         run: |
-          pip install flake8
           make lint
