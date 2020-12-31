@@ -28,7 +28,8 @@ def even_game():
             games_counter -= 1
             right_answers += 1
         else:
-            print(f"'{gamer_answer}' is wrong answer ;(. Correct answer was '{right_answer}'.")
+            print(f"'{gamer_answer}' is wrong answer ;(. "
+            f"Correct answer was '{right_answer}'.")
             print(f"Let's try again, {name}!")
             games_counter = 0
         if right_answers == 3:
