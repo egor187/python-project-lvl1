@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-#import brain_games.games.cli
+
 import brain_games.common
 
 
