@@ -59,3 +59,10 @@ def result(gamer_answer, right_answer, games_counter, right_answers, name):
                 "games_counter": games_counter,
                 "right_answers": right_answers
                 }
+
+
+def gcd(first_operand: int, second_operand: int):
+    while second_operand:
+        first_operand, second_operand = \
+                second_operand, first_operand % second_operand
+    return abs(first_operand)
