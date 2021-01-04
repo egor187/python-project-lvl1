@@ -66,3 +66,12 @@ def gcd(first_operand: int, second_operand: int):
         first_operand, second_operand = \
                 second_operand, first_operand % second_operand
     return abs(first_operand)
+
+
+def is_prime(integer: int):
+    i = 2
+    while i <= integer ** 0.5:
+        if integer % i == 0:
+            return False
+        i += 1
+    return True
